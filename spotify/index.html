@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://kit.fontawesome.com/82f3089547.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="style.css">
+ <title>Spotify</title>
+</head>
+<body>
+ <div class="container">
+  <nav class="sidebar">
+   <!--logo do spotfy-->
+   <div class="logo">
+    <i class="fa-brands fa-spotify"></i>
+   </div>
+   <!--biblioteca-->
+   <div class="nav-library">
+    <i class="fa-solid fa-book"></i>
+    <p>Sua Biblioteca +</p>
+   </div>
+   <!--criar playlist-->
+   <div class="nav-playlist">
+    <h5>Crie sua Primeira Playlist</h5>
+    <p>É fácil, vamos te ajudar</p>
+    <button>Criar playlist</button>
+   </div>
+   <!--para explorar podcast-->
+   <div class="nav-podcast">
+    <h5>Que tal Seguir um Podcast?</h5>
+    <p>Avisaremos você sobre nossos episódios</p>
+    <button>Explore Podcast</button>
+   </div>
+   <!--rodapé-->
+   <div class="nav-footer">
+    <a href="#">Legal</a>
+    <a href="#">Centro de privacidade</a>
+    <a href="#">Política de Privacidade</a>
+    <a href="#">Cookies</a>
+    <a href="#">Sobre anúncios</a>
+    <a href="#">Acessibilidade</a>
+   </div>
+   <!--botão tradutor-->
+   <button class="nav-lang-button">
+    <i class="fa-solid fa-globe"></i>
+    Português do Brasil
+   </button>
+  </nav>
+  <main>
+   <header class="header">
+    <div class="search-bar">
+     <i class="fa-solid fa-magnifying-glass"></i>
+     <input type="text" placeholder="O que você quer ouvir?">
+    </div>
+
+    <div class="button-group">
+        <!-- (onclick="window.location.href='') uma forma simpler para fazer direcionamento em JS deixando o CSS intacto-->
+        <button id="subscribe-button" onclick="window.location.href='spotify_singup/index.html'">Inscreva-se</button>
+        <button id="login-button" onclick="window.location.href='spotify_login/index.html'">Entrar</button>
+    </div>
+   </header>
+   
+   <section class="content">
+    <br>
+    <h2>Artistas Populares</h2>
+    <br>
+    <div class="artists-grid">
+     <!-- inserir dados com JS-->
+    </div>
+
+    <h2>Álbuns Populares</h2>
+    <br>
+    <div class="albums-grid">
+     <!-- inserir dados com JS-->
+    </div>
+   </section>
+  </main>
+ </div>
+ <div class="banner">
+  <div>
+   <h2>Testar o Premium de graça</h2>
+   <p>Inscreva-se para curtir músicas ilimitadas só com alguns anúncios. Não precisa de um cartão de crédito.</p>
+  </div>
+  <button id="subscribe-button" onclick="window.location.href='spotify_singup/index.html'">Inscreva-se Grátis</button>
+ </div>
+</body>
+<script src="./script.js"></script>
+</html>
